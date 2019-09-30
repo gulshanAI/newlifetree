@@ -18,13 +18,22 @@
         <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
         {% block inhead %}{% endblock inhead %}
         <link rel="stylesheet" href="{% static 'css/forstyle.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </head>
     <body class="fixed-header">
         <div id="wrapper" class="clearfix">
         <div class="pads"></div>
             <header id="header" class="medicom-header">
-                <div class="colourfull-row"></div>
+                <!-- <div class="colourfull-row"></div> -->
                 <div class="container">
                     <nav class="navbar navbar-default" role="navigation">
                         <div class="navbar-header">
@@ -34,7 +43,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}" alt="" title=""></a>
+                            <a class="navbar-brand" href="index.html"><img src="{% static 'myimg/logo.png' %}" alt="" title=""></a>
                         </div>
                         <div class="collapse navbar-collapse navbar-right" id="primary-nav">
                             <ul class="nav navbar-nav">
@@ -57,7 +66,6 @@
                         </div>
                     </nav>
                 </div>
-                <div class="header-bottom-line"></div>
             </header>
             {% block content %}{% endblock content %}
             <!--end content-index-->
@@ -99,49 +107,29 @@
                             <!-- Footer Widget
                             ============================================= -->
                             <div class="footer-widget">
-                                <h4><span>Latest Tweets</span></h4>
-                                <div class="twitter-widget">
-                                    <div class="tweet">
-                                        <i class="fa fa-twitter"></i>
-                                        <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a
-                                                href="#.">pixelatic.co.uk.</a>
-                                            <span>about a month ago</span>
-                                        </p>
-                                    </div>
-                                    <div class="tweet">
-                                        <i class="fa fa-twitter"></i>
-                                        <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a
-                                                href="#.">pixelatic.co.uk.</a>
-                                            <span>about a month ago</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <!-- Footer Widget
-                            ============================================= -->
-                            <div class="footer-widget">
                                 <h4><span>get in touch</span></h4>
-                                <p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
                                 <div class="contact-widget">
                                     <i class="fa fa-home"></i>
-                                    <p>Medicom Ltd, Manhattan 1258, New York, USA Lahore</p>
-                                    <i class="fa fa-globe"></i>
-                                    <p><a href="#.">www.medicom.com</a></p>
+                                    <p><a href="https://www.google.com/maps/place/Lifetree+Healthcare+%26+Diagnostic,+Polyclinic,+Sonography+Centre,+Color+Doppler+in+Hinjewadi/@18.5915113,73.7439204,15z/data=!4m2!3m1!1s0x0:0xb370f3312216fce3?sa=X&ved=2ahUKEwiwzJWyuvjkAhUD73MBHUmTATIQ_BIwE3oECA8QCA">
+                                    Medicom Ltd, Manhattan 1258, New York, USA Lahore</a></p>
+                                    <i class="fa fa-envelope"></i>
+                                    <p><a href="mailto: ">lifetree@lifetree.com</a></p>
                                     <i class="fa fa-mobile"></i>
-                                    <p class="phone-number">(+1) 234 567 8901</p>
+                                    <p><a href="tel: 918379092000 ">+91 8379092000</a></p>
                                 </div>
-                                <ul class="social3 clearfix">
-                                    <li><a href="#."><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#."><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#."><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#."><i class="fa fa-skype"></i></a></li>
-                                    <li><a href="#."><i class="fa fa-youtube"></i></a></li>
-                                    <li><a href="#."><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
                             </div>
                         </div>
+
+                        <div class="col-md-3">
+                                <!-- Footer Widget
+                                ============================================= -->
+                                <div class="footer-widget">
+                                    <h4><span>Facebook</span></h4>
+                                    <div class="twitter-widget">
+                                            <div class="fb-page" data-href="https://www.facebook.com/Pediatric-center-and-surgical-clinic-Aundh-341799735956172" data-tabs="timeline" data-height="218" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Pediatric-center-and-surgical-clinic-Aundh-341799735956172" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Pediatric-center-and-surgical-clinic-Aundh-341799735956172"></a></blockquote></div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
                 <!-- Copyright
@@ -152,6 +140,47 @@
             </footer>
             <a href="#." class="back-to-top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
         </div>
+        <div id="AppointMent">
+            <div class="forbg">
+                <div class="forform">
+                    <div class="close">x</div>
+                    <p class="someInfo">Get an appointment now.</p>
+                    <h5 class="abts">MAKE AN APPOINTMENT</h5>
+                    <form class="formSubmi" action="" data="BurnItDown" method="POST" sus="Subscription Request Send">
+                        <div class="form-group">
+                            <input type="text" notsl="no" vali="yes" class="form-control" name="name" placeholder="Your Name *">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" notsl="no" vali="yes" class="form-control" name="phone"
+                                placeholder="Your 10 Digit Phone Number *">
+                        </div>
+                        <div class="form-group">
+                                <input type="email" class="form-control" notsl="no" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" notsl="no" name="message" placeholder="Your message"  rows="7"></textarea>
+                        </div>
+                        
+                        <div class="showerror"></div>
+                        <div class="submit-button">
+                            <button class="btn join" type="submit"><i class="fa fa-calendar"></i> Make an Appointment</button>
+                            <div class="clearfix"></div>
+                        </div>
+                        <input type="hidden" name="phoneNumber" value="no">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="icon-barss">
+            <a href="https://www.facebook.com/Pediatric-center-and-surgical-clinic-Aundh-341799735956172" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="whatapp"><i class="fa fa-whatsapp"></i></a> 
+        </div>
+        <a class="naviga" target="_blank" href="https://www.google.com/maps/place/Lifetree+Healthcare+%26+Diagnostic,+Polyclinic,+Sonography+Centre,+Color+Doppler+in+Hinjewadi/@18.5915113,73.7439204,15z/data=!4m5!3m4!1s0x0:0xb370f3312216fce3!8m2!3d18.5915113!4d73.7439204"> <i class="fa fa-map-marker"></i></a>
+        <a class="subfloat" href="#AppointMent"> <i class="fa fa-calendar"></i> Make an Appointment</a>
+        <a class="calling" href="tel: 918379092000"> <i class="fa fa-phone"></i></a>
         <script src="{% static 'js/jquery.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
         {% block scriptFile %}{% endblock scriptFile %}

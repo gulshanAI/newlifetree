@@ -42,34 +42,29 @@ $(document).ready(function () {
     if(filename == ""){filename = "Lifetree-Healthcare-And-Diagnostics";}
     var ul = $('.nav li a[href="/'+filename+'"]');   
     ul.parent().addClass('active');
-    //End
+
     // let get = $(window).width();
     // if(get < 600)
     //     $('.leftMob').addClass('service-block-two');
 
-    // $(window).load(function() {
-    //     var hash = location.hash.replace(/^#/, '');
-    //     if(hash)
-    //         history.replaceState(null, null, ' ');
-    // });
-    // $(window).on('hashchange', function (e) {
-    //     var hash = location.hash.replace(/^#/, '');
-    //     if (hash == '') {
-    //         $('#Contactus').hide();
-    //         $('body').css("overflow", "auto");	
-    //     }
-    //     else{
-    //         $('#'+hash).show();
-    //         $('body').css("overflow", "hidden");
-    //     }
-    // });
-    // $('.close').click(function(){
-    //     window.history.back();
-    // });
-    // $('.formSubmi').submit(function(){
-    //     let msg = $(this).attr("sus");
-    //     forform($(this), msg);
-    //     return false;
-    // });
-    // $('.acti').click();
+    $(window).load(function() {
+        var hash = location.hash.replace(/^#/, '');
+        if(hash)
+            history.replaceState(null, null, ' ');
+    });
+    $(window).on('hashchange', function (e) {
+        var hash = location.hash.replace(/^#/, '');
+        if (hash == '')
+            $('#AppointMent').hide();
+        else
+            $('#'+hash).show();
+    });
+    $('.close').click(function(){
+        window.history.back();
+    });
+    $('.formSubmi').submit(function(){
+        let msg = $(this).attr("sus");
+        forform($(this), msg);
+        return false;
+    });
 });
