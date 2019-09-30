@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+{% block meta %}
+    <title>Contact-Lifetree-Healthcare-And-Diagnostics</title>
+{% endblock meta %}
+{% block content %}
+			<section class="sub-page-banner text-center" data-stellar-background-ratio="0.3">
+				<div class="overlay"></div>
+				<div class="container">
+					<h1 class="entry-title">Contact Us</h1>
+					<p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+				</div>
+			</section>
+			<div id="sub-page-content" class="clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 class="light bordered">Give us a <span>Message</span></h2>
+							<!-- Contact Form
+							============================================= -->
+							<div class="contact-form clearfix">
+								<div id="message-contact" class="success" style="display:none;">Thank you! we'll contact you shortly.</div>
+								<form name="contact_form" id="contact_form" action="submit.php" method="post" onSubmit="return false;">
+									<input type="text" name="fname" id="fname" placeholder="First Name" onKeyPress="removeChecks();">
+									<input type="text" name="email_address" id="email_address" placeholder="Email Address" onKeyPress="removeChecks();">
+									<input type="text" name="subject" id="subject" placeholder="Subject">
+									<textarea placeholder="Message" name="msg" id="msg"></textarea>
+									<input type="submit" class="btn btn-default" value="Submit" onClick="validateContact();">
+								</form>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h2 class="light bordered">get in <span>touch</span></h2>
+							<!-- Get in Touch Widget
+							============================================= -->
+							<div class="get-in-touch-widget">
+								<ul class="list-unstyled">
+									<li><i class="fa fa-phone"></i>(+09) 0323 750 4561</li>
+									<li><i class="fa fa-envelope"></i><a href="#.">quickhelp@medicom.com</a></li>
+									<li><i class="fa fa-globe"></i><a href="#.">www.medicom-clinic.com</a></li>
+									<li><i class="fa fa-clock-o"></i>Mon - Sat 9:00am - 6:00 pm</li>
+									<li><i class="fa fa-map-marker"></i>Envato Marketplace Melbourne Farlane St Sydney TF - 123456</li>
+								</ul>
+							</div>
+							<!-- Social
+							============================================= -->
+							<ul class="social-rounded">
+								<li><a href="#."><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#."><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#."><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#."><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#."><i class="fa fa-youtube"></i></a></li>
+								<li><a href="#."><i class="fa fa-vimeo-square"></i></a></li>
+								<li><a href="#."><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#."><i class="fa fa-rss"></i></a></li>
+								<li><a href="#."><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#."><i class="fa fa-android"></i></a></li>
+								<li><a href="#."><i class="fa fa-flickr"></i></a></li>
+							</ul>
+						</div>
+					</div>
+                    <h2 class="light bordered">Get<span>Directions</span></h2>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Map
+							============================================= -->
+							<script src="https://maps.googleapis.com/maps/api/js?v=3key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+							<script src="{% static 'js/map.js' %}"></script>
+							<div class="map" id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+{% endblock content %}
+
+{% block scriptFile %}
+    <!-- All Javascript 
+	============================================= -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.10.3.custom.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+    <script src="{% static 'js/counter.js' %}"></script>
+    <script src="{% static 'js/waypoints.js' %}"></script>
+    <script src="{% static 'js/jquery.uniform.js' %}"></script>
+    <script src="{% static 'js/easyResponsiveTabs.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+    <script src="{% static 'js/jquery.mixitup.js' %}"></script>
+    <script src="{% static 'js/forms-validation.js' %}"></script>
+    <script src="{% static 'js/jquery.jcarousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easypiechart.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+{% endblock scriptFile %}

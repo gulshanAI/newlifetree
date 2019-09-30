@@ -1,0 +1,49 @@
+.p0{
+    padding: 0px !important;
+}
+.doc-data{
+    line-height: 17.3px;
+    padding: 7px 0;
+    float: left;
+}
+.heading-doc{
+    font-weight: 600;
+    width: 18%;
+    float: left;
+}
+.detail-doc{
+    width: 60%;
+    float: left;
+    color: #656565;
+}
+.detail-doc p{
+    border: none;
+    display: block;
+    padding: 3px 0;
+}
+.oustsideshape{
+    width: 45%;
+    border-radius: 2%;
+    margin: 0 25px 5px 0;
+    float: left;
+    -webkit-shape-outside: polygon(100% 0, 100% 100%, 50% 100%, 0 50%);
+    shape-outside: polygon(100% 0, 100% 100%, 50% 100%, 0 50%);
+}
+
+@media (max-width: 992px){
+    .fixed-header .medicom-header {
+        position: fixed !important;
+        top: 0px;
+        width: 100%;
+        background: #fff;
+    }
+    .fixed-header.small-header .medicom-header {
+        top: -5px !important;
+    }
+    .pads{
+        padding: 45px;
+    }
+    .team-member{
+        padding-bottom: 38px;
+    }
+}
