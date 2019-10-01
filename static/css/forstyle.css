@@ -140,7 +140,7 @@
     bottom: 185px;
     right: -100px;
     padding: 8px 25px;
-    background: #893231;
+    background: #3f7746;
     z-index: 11111;
     color: #fff;
     font-family: 'Rubik', sans-serif;
@@ -221,6 +221,9 @@ footer.light .copyright{
 footer.light .copyright a{
     font-weight: 700;
 }
+.naviga, .calling{
+    display: none;
+  }
 @media (max-width: 992px){
     footer{
         padding: 40px 0 45px;
@@ -269,6 +272,7 @@ footer.light .copyright a{
       }
       
       .naviga, .calling{
+        display: block;
         position: fixed;
         bottom: 0;
         padding: 5px 22px;
