@@ -603,7 +603,7 @@ HEADER
 	transition: all 0.2s ease-in-out;
 }
 .fixed-header #content-index, .fixed-header .sub-page-banner {
-	margin-top:84px;
+	margin-top:0;
 }
 .fixed-header .header-bottom-line {
 	background:#F4F4F4
@@ -3708,4 +3708,16 @@ COLOR SWITCHER ONLY FOR DEMO
 }
 .backgrounds a#bg-ten {
 	background:url(../images/bg10.png);
+}
+
+@media (max-device-width: 760px){
+	.awesome-features li{
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.awesome-features li i.pull-right{
+		margin: -13px 21px 20px 0;
+		float: left !important;
+	}
 }
